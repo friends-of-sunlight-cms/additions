@@ -1,0 +1,17 @@
+{
+    "$schema": "../../../system/schema/extend.json",
+    "name": "Additions",
+    "description": "Adds some disabled features originally from Sunlight CMS 7.5.x",
+    "version": "1.0.0",
+    "api": "^8.0",
+    "url": "https://jdanek.eu",
+    "class": "AdditionsPlugin",
+    "langs": {
+        "additions": "Resources/languages/"
+    },
+    "events": [
+        {"event": "hcm.fosc.filelist", "method": "onHcmFileList"}
+    ],
+    "events.web": [],
+    "events.admin": []
+}
