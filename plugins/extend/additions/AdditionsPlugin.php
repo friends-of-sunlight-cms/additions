@@ -37,6 +37,7 @@ class AdditionsPlugin extends ExtendPlugin
         }
 
         if (@is_dir($path)) {
+            $items = [];
             $handle = @opendir($path);
             while (false !== ($item = @readdir($handle))) {
                 if (
